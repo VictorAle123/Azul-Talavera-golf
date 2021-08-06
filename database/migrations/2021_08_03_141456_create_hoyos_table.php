@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePuntosTable extends Migration
+class CreateHoyosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,16 @@ class CreatePuntosTable extends Migration
      */
     public function up()
     {
-        Schema::create('puntos', function (Blueprint $table) {
+        Schema::create('hoyos', function (Blueprint $table) {
             $table->id();
-            $table->integer("user");
 
             $table->integer("hoyo");
+            $table->integer("par");
+            $table->integer("ventaja");
 
-            $table->double("puntos");
 
-            
+
             $table->timestamps();
-            
-
-
         });
     }
 
@@ -36,6 +33,6 @@ class CreatePuntosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('puntos');
+        Schema::dropIfExists('hoyos');
     }
 }

@@ -20,3 +20,25 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+    // Stroke play
+    Route::get('stroke','StrokeController@index')->name('stroke.index');
+
+    Route::patch('profile/{user}','ProfileController@update')->name('dashboard.profile.update');
+    Route::get('profile/editpassword','ProfileController@editPassword')->name('dashboard.profile.editPassword');
+    Route::post('profile/updatepassword','ProfileController@updatePassword')->name('dashboard.profile.updatePassword');
+
+    // Match Play
+
+    Route::get('match','matchController@index')->name('match.index');
+
+
+    //stableford play
+
+    Route::get('stableford','stablefordController@index')->name('stableford.index');
+
+
+
+
+

@@ -178,7 +178,7 @@
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Sobre nosotros</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -187,10 +187,16 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Situado a 6 km del Canal de la Perla, el Montebello Golf And Resort Torreón ofrece un campo de golf, aparcamiento privado gratuito y un restaurante. El hotel se ubica en Torreón, a 5 km del centro de la ciudad.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">El alojamiento dispone de 46 habitaciones con un balcón, Wi-Fi y TV con canales por satélite. Se ofrecen habitaciones con vistas al lago. Las habitaciones están equipadas con un baño privado con toallas, toallas de baño y un secador de pelo.</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
                 </div>
-               
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <i class="fas fa-download me-2"></i>
+                        Free Download!
+                    </a>
+                </div>
             </div>
         </section>
         <!-- Contact Section-->
@@ -201,16 +207,16 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">ubicacion</h4>
+                        <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            Bulevar Mieleras Km. 1.5, Parque Industrial Lajat, 27259 Torreón, Coah.
+                            2215 John Daniel Drive
                             <br />
-                          
+                            Clark, MO 65243
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Redes sociales</h4>
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
@@ -218,7 +224,7 @@
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Sobre nosotros</h4>
+                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
                         <p class="lead mb-0">
                             Freelance is a free to use, MIT licensed Bootstrap theme created by
                             <a href="http://startbootstrap.com">Start Bootstrap</a>
@@ -243,7 +249,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Stroke</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Stoke</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -251,29 +257,24 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     
-                                    <!-- Portfolio Modal Stroke - Text-->
-                                    <p class="mb-4">En modalidad Stroke Play se contabilizan todos los golpes y todos los competidores compiten contra todos. El jugador que efectúe menos golpes en el recorrido resultará ganador. En esta modalidad se juegan la mayoría de los torneos profesionales.</p>
-                                    
-                                    <a href="{{ route('stroke.index') }}" class="btn btn-primary">
-                                        
+                                    <button type="submit" class="btn btn-primary">
                                         {{ __('Jugar como invitado') }}
-                                    </a>
+                                    </button>
+
                                     
-                                
-
-                                    <a href="{{ route('stroke.index') }}" class="btn btn-primary">
-                                        
-                                        {{ __('Jugar con perfil de usuario') }}
-                                    </a>
-
-                                   
+                                    <button type="submit" class="btn btn-primary">
+                                        {{ __('Iniciar Sesion') }}
+                                    </button>
                                     <br>
                                     <br>
 
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Cerrar Ventana
+                                        Close Window
                                     </button>
 
 
@@ -303,30 +304,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <!-- Portfolio Modal Match - Text-->
-
-                                    <p class="mb-4">Es la modalidad más extendida en torneos profesionales después del Stroke Play. Juegan dos jugadores, uno contra otro. Se contabilizan los hoyos ganados y perdidos. Si un jugador lleva un hoyo ganado de ventaja, se denomina “uno arriba” o “uno abajo”, si es el caso contrario. Un partido de golf en la modalidad match play acaba cuando uno de los jugadores lleva más hoyos ganados que los hoyos que quedan para finalizar el recorrido. Entonces se denomina que el jugador vencedor le ha hecho “match” al perdedor.</p>
-                                    
-                                    <a href="{{ route('match.index') }}" class="btn btn-primary">
-                                        
-                                        {{ __('Jugar como invitado') }}
-                                    </a>
-                                    
-                                   
-
-                                
-
-                                    <a href="{{ route('match.index') }}" class="btn btn-primary">
-                                        
-                                        {{ __('Jugar con perfil de usuario') }}
-                                    </a>
-                                    <br>
-                                    <br>
-
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-
                                         <i class="fas fa-times fa-fw"></i>
-                                        Cerrar Ventana
+                                        Close Window
                                     </button>
                                 </div>
                             </div>
@@ -353,35 +336,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                
-                               
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-
-                                    <p class="mb-4">Modalidad de juego Stroke Play en la que en cada hoyo puntúa con relación al par: 1 punto por el bogey, dos por el par, tres por el birdie, cuatro por el eagle. Cuando no se puede terminar el hoyo en los golpes que valen para puntuar, se recoge la bola. Gana quien suma más puntos. La modalidad stableford es muy utilizada en campeonatos de clubs, permitiendo un juego más fluido que otras modalidades, ya que el jugador puede levantar la bola si esta no va a contar.  .</p>
-                                    
-                                    <a href="{{ route('stroke.index') }}" class="btn btn-primary">
-                                        
-                                        {{ __('Jugar como invitado') }}
-                                    </a>
-                                    
-                                   
-
-                                
-
-                                    <a href="{{ route('stroke.index') }}" class="btn btn-primary">
-                                        
-                                        {{ __('Jugar con perfil de usuario') }}
-                                    </a>
-                                    <br>
-                                    <br>
-
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-
-                                        
-
-
                                         <i class="fas fa-times fa-fw"></i>
-                                        Cerrar Ventana
+                                        Close Window
                                     </button>
                                 </div>
                             </div>
@@ -390,7 +350,70 @@
                 </div>
             </div>
         </div>
-        
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Portfolio Modal 6-->
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -409,11 +432,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Cerrar Ventana
+                                        Close Window
                                     </button>
                                 </div>
                             </div>
