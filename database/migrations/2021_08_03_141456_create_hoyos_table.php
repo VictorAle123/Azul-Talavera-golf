@@ -17,11 +17,6 @@ class CreateHoyosTable extends Migration
             $table->id();
 
             $table->integer("hoyo");
-            $table->integer("par");
-            $table->integer("ventaja");
-
-
-
             $table->timestamps();
         });
     }

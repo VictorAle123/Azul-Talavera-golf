@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 @section('content')
@@ -20,13 +21,11 @@
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">{{ auth()->user()->name }}
+                          <h5 class="card-title">{{ auth()->user()->name }} {{ auth()->user()->apellido }}
                           </h5>
                           <p class="card-text">Partidas Jugadas: 0 </p>
                           <p class="card-text">Partidas Ganadas: 0 </p>
                           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-
                           
 
                         </div>
@@ -37,29 +36,36 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
                         <th scope="col"> </th>
                         <th scope="col"> </th>
-                        <th scope="col">Handle</th>
+                        <th scope="col"> </th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
+                      @foreach ($partidasJugadas as $partidas)
+                          
+                      
                       <tr>
-                        <th scope="row"> </th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <th scope="row"> {{$partidas->Hoyos->hoyo}} </th>
+                        <td>{{$partidas->golpe}} </td>
+                        <td></td>
+                        <td></td>
                       </tr>
+
+                      @endforeach
+
                       <tr>
+
                         <th scope="row"> </th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                       </tr>
                       <tr>
                         <th scope="row"> </th>
                         <td colspan="2"> </td>
-                        <td>@twitter</td>
+                        <td></td>
                       </tr>
                     </tbody>
                   </table>

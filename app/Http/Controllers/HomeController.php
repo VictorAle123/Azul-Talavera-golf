@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\StrokeModel;
+
+
 
 class HomeController extends Controller
 {
@@ -23,6 +26,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $partidasJugadas = StrokeModel::get();
+
+
+        return view('home', compact ('partidasJugadas') );
+
+
     }
 }

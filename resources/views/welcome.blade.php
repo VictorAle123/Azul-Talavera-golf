@@ -101,7 +101,7 @@
 
 
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header style="background-color: #5CA4CE;" class="masthead text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="imagenes/logo.png" height="350px" alt="..." />
@@ -175,9 +175,10 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section style="background-color: #5CA4CE;" class="page-section  text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
+
                 <h2 class="page-section-heading text-center text-uppercase text-white">Sobre nosotros</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -254,18 +255,23 @@
                                     
                                     <!-- Portfolio Modal Stroke - Text-->
                                     <p class="mb-4">En modalidad Stroke Play se contabilizan todos los golpes y todos los competidores compiten contra todos. El jugador que efectúe menos golpes en el recorrido resultará ganador. En esta modalidad se juegan la mayoría de los torneos profesionales.</p>
-                                    
-                                    <a href="{{ route('stroke.index') }}" class="btn btn-primary">
-                                        
-                                        {{ __('Jugar como invitado') }}
-                                    </a>
-                                    
-                                
+                                   
+                                   
+                                    <form action="{{route('partida.store')}}" method="POST" enctype="multipart/form-data">
+                                        @csrf
 
-                                    <a href="{{ route('stroke.index') }}" class="btn btn-primary">
+                                    {{-- <a href="{{ route('stroke.index') }}" class="btn btn-primary">
                                         
                                         {{ __('Jugar con perfil de usuario') }}
-                                    </a>
+                                    </a> --}}
+
+                                    
+                                    <button type="submit" class="btn btn-success">
+                                        <i class="fas fa-bolt wd-10 mg-r-5"></i>
+                                        {{ __('Create') }}
+                                    </button>
+
+                                    </form>
 
                                    
                                     <br>

@@ -15,13 +15,12 @@ class CreatePartidasTable extends Migration
     {
         Schema::create('partidas', function (Blueprint $table) {
             $table->id();
+
             $table->unsignedBigInteger('id_jugador');
 
             $table->foreign('id_jugador')->references('id')->on('users');
 
-            $table->unsignedBigInteger('id_hoyos');
 
-            $table->foreign('id_hoyos')->references('id')->on('hoyos');
 
 
             $table->timestamps();
