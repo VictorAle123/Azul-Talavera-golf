@@ -25,6 +25,7 @@ class StrokeController extends Controller
     public function index()
     {
         //
+        
         return view ("interfaz.createuser.stroke");
         
 

@@ -17,7 +17,39 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src=" {{ asset('imagenes/perfil.jpg')}}" class="img-fluid rounded-start" alt="...">
+
+                        {{-- {{ auth()->user()->name }} --}}
+
+                        {{-- <img src="{{ auth()->user()->foto }}" class="img-fluid rounded-start" alt="..."> --}}
+
+                        <img src="imagenes/{{ auth()->user()->foto }}" class="img-fluid rounded-start" alt="...">
+
+                        $destination_path = 'public/storage/avatars';
+
+
+
+
+                        <form action="{{ asset('imagenes/perfil.jpg')}}" method="POST" enctype="multipart/form-data" id="upload">
+                          {{ csrf_field() }}
+                          <input name="foto" type="file" class="form-control" required>
+                          
+                          {{-- placeholder="nombre..." value=""/> --}}
+
+
+
+                          <button type="submit" class="btn btn-primary btn-block btn-sm">
+                            <span class="glyphicon glyphicon-upload"></span>
+                            Actualizar imagen
+                          </button>
+                        </form>
+
+                        <img src=" {{ asset(Auth::user()->foto_route)}}"  alt="tu imagen de perfil">
+
+                          {{-- <input type="file" name="imagen"/>
+                          <input type="submit" value="Aceptar">
+                        </form> --}}
+
+
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">

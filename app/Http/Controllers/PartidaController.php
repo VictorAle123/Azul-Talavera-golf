@@ -36,5 +36,4 @@ class PartidaController extends Controller
             return view ('interfaz.createuser.stroke', compact ('partidas'));
 
 }
-
 }

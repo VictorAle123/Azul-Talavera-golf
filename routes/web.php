@@ -22,12 +22,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+
     // Stroke play
     Route::get('stroke/','StrokeController@index')->name('stroke.index');
 
     Route::post('stroke/store/{partidas}','StrokeController@store')->name('stroke.store');
 
     //Partida
+
+    
 
     Route::post('partida/store','PartidaController@store')->name('partida.store');
 

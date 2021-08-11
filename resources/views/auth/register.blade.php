@@ -24,11 +24,8 @@
          width="220px" height="250px">
         
                
-
-
 </center>
 <br>
-
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -99,6 +96,9 @@
                             </div>
                         </div>
 
+                        <form name="subida-imagenes" type="POST" enctype="multipart/formdata" >
+                            <input name="foto" type="file" class="form-control" required>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-3">
                                 <button type="submit" class="btn btn-primary">
@@ -107,6 +107,9 @@
                             </div>
                         </div>
                     </form>
+                    </form>
+
+
                 </div>
             </div>
         </div>

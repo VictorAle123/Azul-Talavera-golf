@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>Azul Talavera</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -134,8 +134,7 @@
                         <th scope="col">hoyo</th>
                         <th scope="col">{{ auth()->user()->name }}</th>
                         <th scope="col">Jugador2</th>
-                        <th scope="col">Jugador3</th>
-                        <th scope="col">Jugador4</th>
+                       
 
                       </tr>
                     </thead>
@@ -155,12 +154,7 @@
                         <td><input type="number" value="0" id="juno{{$i+1}}"  name="tentacles"
                             min="1" max="20"></td>
 
-                        <td><input type="number" value="0" id="jtres{{$i+1}}"  name="tentacles"
-                                min="1" max="20"></td>
-
-                                <td><input type="number" value="0" id="jcuatro{{$i+1}}"  name="tentacles"
-                                    min="1" max="20"></td>
-
+                        
 
                         </form>
 
@@ -175,10 +169,7 @@
 
                       <th scope="row"> <input type="text" id="j1" disabled name="tentacles" size ="4px"> </th>
 
-                      <th scope="row"> <input type="text" id="j3" disabled name="tentacles" size ="4px"> </th>
-
-                      <th scope="row"> <input type="text" id="j4" disabled name="tentacles" size ="4px"> </th>
-
+                     
                      
 
 
@@ -196,8 +187,7 @@
                         <th scope="col">hoyo</th>
                         <th scope="col">{{ auth()->user()->name }}</th>
                         <th scope="col">Jugador2</th>
-                        <th scope="col">Jugador3</th>
-                        <th scope="col">Jugador4</th>
+                        
 
                       </tr>
                     </thead>
@@ -217,11 +207,7 @@
                         <td><input type="number" value="0" id="v2dos{{$v+1}}"  name="tentacles"
                                 min="0" max="20" > </td>
 
-                        <td><input type="number" value="0" id="v2tres{{$v+1}}"  name="tentacles"
-                            min="0" max="20" > </td>
-
-                        <td><input type="number" value="0" id="v2cuatro{{$v+1}}"  name="tentacles"
-                            min="0" max="20" > </td>
+                      
                             
                       </tr>
 
@@ -233,10 +219,7 @@
 
                       <th scope="row"> <input type="text" id="v2j2" disabled name="tentacles" size ="4px"> </th>
 
-                      <th scope="row"> <input type="text" id="v2j3"disabled  name="tentacles" size ="4px"> </th>
-
-                      <th scope="row"> <input type="text" id="v2j4" disabled name="tentacles" size ="4px"> </th>
-
+                     
                       <tr>
 
                       <th scope="row">Total </th>
@@ -245,10 +228,7 @@
 
                       <th scope="row"> <input type="text" id="tv2" disabled name="tentacles" size ="4px"> </th>
 
-                      <th scope="row"> <input type="text" id="tv3" disabled name="tentacles" size ="4px"> </th>
-
-                      <th scope="row"> <input type="text" id="tv4" disabled name="tentacles" size ="4px"> </th>
-
+                     
                     </tr>
 
                     </tbody>
@@ -262,8 +242,29 @@
                
             </div>
         </header>
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
+        <footer class="footer text-center">
+          <div class="container">
+              <div class="row">
+                  <!-- Footer Location-->
+                  <div class="col-lg-4 mb-5 mb-lg-0">
+                      <h4 class="text-uppercase mb-4">ubicacion</h4>
+                      <p class="lead mb-0">
+                          Bulevar Mieleras Km. 1.5, Parque Industrial Lajat, 27259 Torreón, Coah.
+                          <br />
+                        
+                      </p>
+                  </div>
+                  <!-- Footer Social Icons-->
+                  <div class="col-lg-4 mb-5 mb-lg-0">
+                      <h4 class="text-uppercase mb-4">Redes sociales</h4>
+                      <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/azultalaveratorreon"><i class="fab fa-fw fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/azultalaveratorreon/?hl=es-la"><i class="fab fa-fw fa-instagram"></i></a>
+                  </div>
+                  <!-- Footer About Text-->
+                  
+              </div>
+          </div>
+      </footer>
 
                 <!-- Button trigger modal -->
 

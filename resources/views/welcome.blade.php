@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>Azul Talavera</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -151,7 +151,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i > Match </i></div>
                             </div>
-                            <img class="img-fluid" src="imagenes/match.jpg" alt="..." />
+                            <img class="img-fluid" src="imagenes/matchs.jpg" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -160,7 +160,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i >Stableford</i></div>
                             </div>
-                            <img class="img-fluid" src="imagenes/stableford.jpg" alt="..." />
+                            <img class="img-fluid" src="imagenes/sta.jpg" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
@@ -212,27 +212,20 @@
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Redes sociales</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/azultalaveratorreon"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/azultalaveratorreon/?hl=es-la"><i class="fab fa-fw fa-instagram"></i></a>
                     </div>
                     <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Sobre nosotros</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
+                    
                 </div>
             </div>
         </footer>
+
         <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2021</small></div>
-        </div>
+        
+
+
+
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
@@ -365,7 +358,7 @@
 
                                     <p class="mb-4">Modalidad de juego Stroke Play en la que en cada hoyo puntúa con relación al par: 1 punto por el bogey, dos por el par, tres por el birdie, cuatro por el eagle. Cuando no se puede terminar el hoyo en los golpes que valen para puntuar, se recoge la bola. Gana quien suma más puntos. La modalidad stableford es muy utilizada en campeonatos de clubs, permitiendo un juego más fluido que otras modalidades, ya que el jugador puede levantar la bola si esta no va a contar.  .</p>
                                     
-                                    <a href="{{ route('stroke.index') }}" class="btn btn-primary">
+                                    <a href="{{ route('stableford.index') }}" class="btn btn-primary">
                                         
                                         {{ __('Jugar como invitado') }}
                                     </a>
@@ -374,7 +367,7 @@
 
                                 
 
-                                    <a href="{{ route('stroke.index') }}" class="btn btn-primary">
+                                    <a href="{{ route('stableford.index') }}" class="btn btn-primary">
                                         
                                         {{ __('Jugar con perfil de usuario') }}
                                     </a>

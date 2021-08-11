@@ -20,9 +20,6 @@ class CreatePartidasTable extends Migration
 
             $table->foreign('id_jugador')->references('id')->on('users');
 
-
-
-
             $table->timestamps();
         });
     }

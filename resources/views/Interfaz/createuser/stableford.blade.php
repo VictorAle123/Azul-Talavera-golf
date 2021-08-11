@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>Azul Talavera</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -128,14 +128,24 @@
                 <!-- Tabla -->
 
 
+
+
                 <table class="table">
                     <thead class="thead-dark">
                       <tr>
                         <th scope="col">hoyo</th>
-                        <th scope="col">{{ auth()->user()->name }}</th>
-                        <th scope="col">Jugador2</th>
-                        <th scope="col">Jugador3</th>
-                        <th scope="col">Jugador4</th>
+                        <th scope="col"> <H4>{{ auth()->user()->name }} </H4></th>
+
+                        <th scope="col"> <label for="inputPassword2" class="sr-only">Jugador2</label>
+                            <input type="text" class="form-control" size="1" id="jugador2" placeholder="jugador2"> </th>
+
+
+                        <th scope="col"> <label for="inputPassword2" class="sr-only">Jugador3</label>
+                            <input type="text" class="form-control" size="1" id="jugador3" placeholder="jugador3">  </th>
+
+
+                        <th scope="col"> <label for="inputPassword2" class="sr-only">Jugador4</label>
+                            <input type="text" class="form-control" size="1" id="jugador4" placeholder="jugador4"></th>
 
                       </tr>
                     </thead>
@@ -184,8 +194,12 @@
 
                     </tbody>
                   </table>
+                  <br>
 
-                  <button onclick="vuelta1()">Obtener resultado</button>
+                  <button class="btn btn-secondary " type="submit" onclick="vuelta1()"> Obtener resultado</button>
+
+                  {{-- <button onclick="vuelta1()">Obtener resultado</button> --}}
+                  <br>
 
 
                   <table class="table">
@@ -194,10 +208,18 @@
 
                       <tr>
                         <th scope="col">hoyo</th>
-                        <th scope="col">{{ auth()->user()->name }}</th>
-                        <th scope="col">Jugador2</th>
-                        <th scope="col">Jugador3</th>
-                        <th scope="col">Jugador4</th>
+                        <th scope="col"><H4>{{ auth()->user()->name }} </H4></th>
+
+                        <th scope="col"> <label for="inputPassword2" class="sr-only">Jugador2</label>
+                            <input type="text" class="form-control" size="1" id="jugador2" placeholder="jugador2"> </th>
+
+
+                        <th scope="col"> <label for="inputPassword2" class="sr-only">Jugador3</label>
+                            <input type="text" class="form-control" size="1" id="jugador3" placeholder="jugador3">  </th>
+
+
+                        <th scope="col"> <label for="inputPassword2" class="sr-only">Jugador4</label>
+                            <input type="text" class="form-control" size="1" id="jugador4" placeholder="jugador4"></th>
 
                       </tr>
                     </thead>
@@ -254,7 +276,11 @@
                     </tbody>
                   </table>
 
-                  <button onclick="vuelta1()">Obtener resultado</button>
+                  <button class="btn btn-secondary " type="submit" onclick="vuelta1()"> Obtener resultado</button>
+
+
+
+                  {{-- <button onclick="vuelta1()">Obtener resultado</button> --}}
                   
            
 
@@ -262,8 +288,32 @@
                
             </div>
         </header>
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
+
+        <footer class="footer text-center">
+          <div class="container">
+              <div class="row">
+                  <!-- Footer Location-->
+                  <div class="col-lg-4 mb-5 mb-lg-0">
+                      <h4 class="text-uppercase mb-4">ubicacion</h4>
+                      <p class="lead mb-0">
+                          Bulevar Mieleras Km. 1.5, Parque Industrial Lajat, 27259 Torreón, Coah.
+                          <br />
+                        
+                      </p>
+                  </div>
+                  <!-- Footer Social Icons-->
+                  <div class="col-lg-4 mb-5 mb-lg-0">
+                      <h4 class="text-uppercase mb-4">Redes sociales</h4>
+                      <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/azultalaveratorreon"><i class="fab fa-fw fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/azultalaveratorreon/?hl=es-la"><i class="fab fa-fw fa-instagram"></i></a>
+                  </div>
+                  <!-- Footer About Text-->
+                  
+              </div>
+          </div>
+      </footer>
+        
+
 
                 <!-- Button trigger modal -->
 
@@ -499,6 +549,9 @@
                  $("#tv4").val(totv4)
 
                  console.log("total " + totv4)
+
+
+                 
 
 
 

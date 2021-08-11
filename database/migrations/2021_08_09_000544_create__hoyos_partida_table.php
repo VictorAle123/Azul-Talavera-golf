@@ -16,12 +16,8 @@ class CreateHoyosPartidaTable extends Migration
         Schema::create('stroke_models', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-
-            
             $table->unsignedBigInteger('id_hoyo');
-
             $table->foreign('id_hoyo')->references('id')->on('hoyos');
-
             $table->unsignedBigInteger('id_partida');
             $table->foreign('id_partida')->references('id')->on('partidas');
             $table->string('golpe'); 
