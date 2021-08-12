@@ -51,5 +51,17 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
+     // admin 
+
+     //traer informacion
+     Route::get('admin','AdminController@index')->name('admin.index');
+     //Editar
+     Route::get('admin','RegisterController@index')->name('admin.index');
+     Route::get('admin','Register@index')->name('admin.index');
+
+     
+
+
+
 
 

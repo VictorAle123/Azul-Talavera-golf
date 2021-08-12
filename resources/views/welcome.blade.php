@@ -319,6 +319,7 @@
                                         
                                         {{ __('Jugar con perfil de usuario') }}
                                     </a>
+                                    
                                     <br>
                                     <br>
 

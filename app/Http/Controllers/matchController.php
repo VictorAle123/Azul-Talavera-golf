@@ -17,6 +17,7 @@ class matchController extends Controller
         return view ("interfaz.createuser.match");
 
     }
+    
 
     /**
      * Show the form for creating a new resource.

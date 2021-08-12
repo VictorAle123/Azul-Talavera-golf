@@ -29,7 +29,12 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+
+
+
+    // protected $redirectTo = RouteServiceProvider::HOME;
+
+
 
     /**
      * Create a new controller instance.
@@ -38,7 +43,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        // $this->middleware('guest');
     }
 
     /**
@@ -47,6 +52,9 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
+
+
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -87,5 +95,24 @@ class RegisterController extends Controller
         ]);
     }
     
+    protected function update(Request $request, Usuario $usuario )
+    {
+
+       $usuario-> update([
+            'name' => $data['name'],
+            'apellido' => $data['apellido'],
+            'email' => $data['email'],
+            'foto' => $data['foto'],
+            'password' => Hash::make($data['password']),
+            
+        ]);
+
+        return redirect()->route('admin.index')->with('Correcto', 'el usuario ha sido actualizado');
+
+    }
+
+
+    
+
 
 }
